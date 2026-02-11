@@ -10,7 +10,7 @@
 
 // Distance thresholds (in cm)
 // Carefull! Most ultrasonic sensors don't go below 20cm, so keep a safe margin
-#define DIST_DETECTION 200  // 2 meters - wake system from standby
+#define DIST_DETECTION 250  // 2.5 meters - wake system from standby
 #define DIST_GREEN 100      // > 100cm = green
 #define DIST_YELLOW 75      // 75-100cm = yellow
 #define DIST_ORANGE 55      // 55-75cm = orange
