@@ -1,5 +1,6 @@
 // ESP32 Parking Sensor
 #include <Adafruit_NeoPixel.h>
+#include <WiFi.h>  // AGGIUNTO!
 
 // Pin definitions
 #define TRIG_PIN 5
@@ -49,6 +50,10 @@ void setup() {
   strip.begin();
   strip.setBrightness(50);
   strip.show();  // All LEDs should be turned off
+
+  // Turn off WiFi and Bluetooth
+  WiFi.mode(WIFI_OFF);
+  btStop();
   
   Serial.println("ESP32 Parking Sensor");
   Serial.println("System in standby - Waiting for movement...");
