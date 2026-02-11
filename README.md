@@ -20,6 +20,8 @@ Sistema intelligente di assistenza al parcheggio basato su ESP32 con indicatore 
 
 ## Schema di Collegamento Elettrico
 
+![Wiring Diagram](./WiringDiagram.png)
+
 ```
 ESP32-S3          JSN-SR04T
 ---------         ----------
@@ -60,7 +62,7 @@ GND       ----→   GND
 
 ### Procedura di Flash
 
-1. Aprire il file [parkinsensor/parkinsensor.ino](parkinsensor/parkinsensor.ino) con Arduino IDE
+1. Aprire il file [parkingsensor/parkingsensor.ino](parkingsensor/parkingsensor.ino) con Arduino IDE
 
 2. Selezionare la scheda ESP32:
    - Andare in `Tools` → `Board` → `ESP32 Arduino` → `ESP32S3 Dev Module`
@@ -119,7 +121,7 @@ GND       ----→   GND
 
 ### Personalizzazione
 
-Puoi modificare queste variabili all'inizio del file [parkinsensor.ino](parkinsensor/parkinsensor.ino) per adattare il comportamento del sistema alle tue esigenze:
+Puoi modificare queste variabili all'inizio del file [parkingsensor.ino](parkingsensor/parkingsensor.ino) per adattare il comportamento del sistema alle tue esigenze:
 
 - **Aumentare `INACTIVITY_TIMEOUT`**: per sistemi che devono rimanere attivi più a lungo
 - **Ridurre `MOVEMENT_THRESHOLD`**: per rendere il sistema più sensibile ai piccoli movimenti
